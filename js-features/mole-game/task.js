@@ -8,11 +8,13 @@ getHole = (index) => {
       dead.textContent++;
       if (dead.textContent >= 10) {
         alert("Победа!");
+        return location.reload();
         }
           } else {
             lost.textContent++;
             if (lost.textContent >= 5) {
               alert("Вы проиграли");
+              return location.reload();
             }
         }
     }
