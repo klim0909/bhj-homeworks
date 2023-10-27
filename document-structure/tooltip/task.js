@@ -4,7 +4,7 @@ tooltipLinks.forEach(link => {
 
   const tooltip = document.createElement('div');
   tooltip.className = 'tooltip';
-
+  
   const text = link.getAttribute('title');
 
   tooltip.textContent = text;
