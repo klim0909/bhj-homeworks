@@ -1,8 +1,10 @@
     const taskInput = document.getElementById("task__input");
   const tasksAdd = document.getElementById("tasks__add");
   
-  tasksAdd.addEventListener("click", listItem);
-  
+  tasksAdd.addEventListener("click", function(event) {
+  event.preventDefault();
+  listItem()
+  });
   function listItem() {
   
     const tasksList = document.getElementById("tasks__list");
@@ -38,4 +40,3 @@
     });
   
   }
-  //Почему то в яндксе не работает
